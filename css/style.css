@@ -4,6 +4,10 @@
   opacity: 0.98;
 }
 
+.active {
+  color: #ffb700;
+}
+
 /*FONT*/
 h1 {
   font-weight: 700;
@@ -42,7 +46,7 @@ svg {
 /* MAIN*/
 .main {
   background-color: #0c1019;
-  padding-top: 5rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
@@ -101,6 +105,35 @@ svg {
   background-size: cover;
   opacity: 0.9;
   background-repeat: no-repeat;
+  padding: 3rem;
+  margin-top: 10rem;
+}
+
+.fondo-2 {
+  background-image: url(../img/img-5.png);
+  background-size: contain;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+}
+
+.fondo-3 {
+  background-image: url(../img/img-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  padding: 3rem;
+  margin-top: 10rem;
+}
+
+.fondo-4 {
+  background-image: url(../img/img-4.png);
+  background-size: contain;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
 }
 
 /*DESCARGAS*/
@@ -242,7 +275,6 @@ svg {
 }
 /*USUARIO*/
 .login-box {
-  margin-top: 5rem;
   height: auto;
   background: #0f1521;
   text-align: center;
