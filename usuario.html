@@ -22,18 +22,20 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- ICONOS8 -->
     <a target="_blank" href="https://icons8.com/icon/32585/argentina"></a>
+    <!-- CSS ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top animate__animated animate__fadeInDown">
+        <div class="container-lg">
           <a class="navbar-brand" href="index.html"
             ><img src="img/neon-wallet-logo.png" alt="logo" />
           </a>
@@ -95,7 +97,7 @@
         <div class="row d-flex"></div>
         <div class="col-lg-5 col-md-6 col-sm-7 login-box">
           <div class="col-lg-12 login-img">
-            <img src="https://img.icons8.com/nolan/64/key.png" />
+            <img src="/img/user-img.png" alt="iniciar secion" />
           </div>
           <div class="col-lg-12 login-title">SIGN IN</div>
           <div class="col-lg-12 login-form">
@@ -123,8 +125,11 @@
                     name="pswd"
                   />
                 </div>
+
                 <div class="col-lg-12 form-grupo">
-                  <div class="col-lg6 login-btn login-text">
+                  <div
+                    class="col-lg-12 login-btn login-text d-flex justify-content-between pb-5"
+                  >
                     <label class="form-check-label">
                       <input
                         class="form-check-input"
@@ -133,6 +138,9 @@
                       />
                       Remember me
                     </label>
+                    <div>
+                      <a href="#" class="btn-register">Register</a>
+                    </div>
                   </div>
                   <div class="col-lg-6 login-btn login-button">
                     <div class="col-lg-6 login-btm login-text">
@@ -158,7 +166,7 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
           <div class="col-md-6 py-3">
             <img
@@ -167,150 +175,165 @@
               class="footerLogo img-fluid"
             />
           </div>
-          <div class="col-md-6 py-3 pt-4 d-flex justify-content-end flex-wrap">
-            <img
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
-              class="footer-icons"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
-              class="footer-icons"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/discord--v2.png"
-              class="footer-icons"
-            />
-            <img src="img/icon-github.png" alt="" class="footer-icons" />
-            <img
-              src="https://img.icons8.com/color/48/000000/facebook-new.png"
-              class="footer-icons"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"
-              class="footer-icons"
-            />
+          <div class="col-md-6 py-3 d-flex justify-content-end flex-wrap">
+            <a href="#">
+              <img
+                src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+                class="footer-icons"
+              />
+            </a>
+            <a href="https://www.instagram.com/nicoarias____/" target="_blank">
+              <img
+                src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
+                class="footer-icons"
+              />
+            </a>
+            <a href="https://discord.com/users/kero47#1727" target="_blank">
+              <img
+                src="https://img.icons8.com/color/48/000000/discord--v2.png"
+                class="footer-icons"
+              />
+            </a>
+            <a href="https://github.com/nicoarias47" target="_blank"
+              ><img src="img/icon-github.png" alt="" class="footer-icons"
+            /></a>
+            <a href="https://www.facebook.com/ariel.nico/" target="_blank">
+              <img
+                src="https://img.icons8.com/color/48/000000/facebook-new.png"
+                class="footer-icons"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nicolas-arias-657597228/"
+              target="_blank"
+            >
+              <img
+                src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"
+                class="footer-icons"
+              />
+            </a>
           </div>
         </div>
         <div class="row">
-          <div class="col py-3 text-white d-inline-flex flex-column">
+          <div class="col-12 col-sm-3  py-3 d-flex flex-column align-items-center align-items-sm-start">
             <h3 class="footer-title">General</h3>
             <a href="#" class="footer-link">
-              <p class="footer-text">Noticias</p>
+              <span class="footer-text">Noticias</span>
             </a>
             <a href="#" class="footer-link">
-              <p class="footer-text">Multimedia</p>
+              <span class="footer-text">Multimedia</span>
             </a>
             <a href="#" class="footer-link">
-              <p class="footer-text">Trabaja con nosotros</p>
+              <span class="footer-text">Trabaja con nosotros</span>
+            </aspan>
+            <a href="faq.html" class="footer-link">
+              <span class="footer-text">FAQ</span>
             </a>
             <a href="#" class="footer-link">
-              <p class="footer-text">FAQ</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Mas...</p>
-            </a>
-          </div>
-          <div class="col py-3 text-white d-flex flex-column">
-            <h3>Podemos Ayudarte</h3>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Ayuda urgente</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Proteccion de datos personales</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Defensa del consumidor</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Personas expuestas publicamente</p>
+              <span class="footer-text">Mas...</span>
             </a>
           </div>
-          <div class="col py-3 text-white d-flex flex-column flex-wrap">
-            <h3>Comunidad</h3>
+          <div class="col-12 col-sm-3  py-3 d-flex flex-column align-items-center align-items-sm-start">
+            <h3 class="footer-title">Podemos Ayudarte</h3>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">Ayuda urgente</span>
+            </a>
+            <a href="#" class="footer-link">
+              <span class="footer-text">Proteccion de datos personales</span>
+            </a>
+            <a href="#" class="footer-link">
+              <span class="footer-text">Defensa del consumidor</span>
+            </a>
+            <a href="#" class="footer-link">
+              <span class="footer-text">Personas expuestas publicamente</span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-3  py-3 d-flex flex-column align-items-center align-items-sm-start">
+            <h3 class="footer-title">Soporte</h3>
+            <a href="#" class="footer-link">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/argentina.png"
                   class="flag"
                 />
                 Argentina
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/brazil.png"
                   class="flag"
                 />
                 Brasil
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/chile.png"
                   class="flag"
                 />
                 Chile
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/colombia.png"
                   class="flag"
                 />
                 Colombia
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/spain-2.png"
                   class="flag"
                 />
                 España
-              </p>
+              </span>
             </a>
           </div>
-          <div class="col py-2 text-white d-flex flex-column flex-wrap">
+          <div class="col-12 col-sm-3  py-2 d-flex flex-column align-items-center align-items-sm-start">
             <br />
             <br />
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/usa.png"
                   class="flag"
                 />
                 Estados Unidos
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/canada.png"
                   class="flag"
                 />
                 Canada
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/australia-flag--v1.png"
                   class="flag"
                 />
                 Australia
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/japan.png"
                   class="flag"
                 />
                 Japon
-              </p>
+              </span>
             </a>
           </div>
         </div>

@@ -22,18 +22,20 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- ICONOS8 -->
     <a target="_blank" href="https://icons8.com/icon/32585/argentina"></a>
+    <!-- CSS ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top animate__animated animate__fadeInDown">
+        <div class="container-lg">
           <a class="navbar-brand" href="index.html"
             ><img src="img/neon-wallet-logo.png" alt="logo" />
           </a>
@@ -94,16 +96,8 @@
       <section class="py-5">
         <div class="container-lg">
           <div class="row">
-            <div class="col">
-              <div>
-                <h3>FAQ</h3>
-                <h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Fugiat qui delectus dolor accusamus quaerat sed repellat ipsum
-                  alias cum possimus voluptas quam, consequuntur necessitatibus
-                  modi veritatis mollitia facere inventore ab.
-                </h6>
-              </div>
+            <div class="col">              
+              <h1 class="display-3">FAQ</h1>            
               <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -115,8 +109,7 @@
                       aria-expanded="true"
                       aria-controls="panelsStayOpen-collapseOne"
                     >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Fugiat, facere!
+                    ¿Cómo hago una transferencia con la app Neon Wallet?
                     </button>
                   </h2>
                   <div
@@ -124,15 +117,11 @@
                     class="accordion-collapse collapse show"
                     aria-labelledby="panelsStayOpen-headingOne"
                   >
-                    <div class="accordion-body">
-                      <strong>asdsadd</strong
-                      ><code class="accordion-text"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Asperiores voluptatum adipisci culpa molestias
-                        quas facilis nisi iure fuga corrupti numquam obcaecati
-                        hic fugit aperiam quidem, quasi earum eum atque
-                        magnam!</code
-                      >
+                    <div class="accordion-body">               
+                      <span class="accordion-text">Con la app podés realizar transferencias en pesos y dólares.</span>
+                      </br>
+                      <span class="accordion-text">Para realizarla, ingresá a la aplicación con tu Usuario y Clave Digital y seleccioná la opción "Transferencias" del menú principal. Solo tenés que elegir qué tipo de cuentas disponés para realizar la transferencia.</span>
+                                              
                     </div>
                   </div>
                 </div>
@@ -146,7 +135,7 @@
                       aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseTwo"
                     >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Desde la app Neon Wallet, ¿puedo pagar mi Tarjeta de Crédito?
                     </button>
                   </h2>
                   <div
@@ -155,13 +144,13 @@
                     aria-labelledby="panelsStayOpen-headingTwo"
                   >
                     <div class="accordion-body">
-                      <strong>asdasd</strong>
-                      <code class="accordion-text"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Repellendus modi amet odio tenetur a quaerat quae
-                        veritatis sint magni excepturi in iste sed ab, dolore
-                        nesciunt. Soluta et vero asperiores!</code
-                      >
+                      <span class="accordion-text">Pagá tu Tarjeta de Crédito con débito en el día desde la app. También podés modificar el importe a debitar al vencimiento. Si no estás adherido al débito automático en Cuenta Monetaria deberás seleccionarla al momento de pagar.</span>
+                      <span class="accordion-text">
+                        Para realizar el pago ingresá al menú contextual (para Android) o al menú "Tarjetas" (para iOS), seleccioná la tarjeta que quieras pagar y la opción "Pago Tarjeta" que aparece debajo del detalle de consumos (en iOS) o desde el menú contextual (en Android) y elegí el Tipo de Pago requerido.
+                      </span>      
+                      <span class="accordion-text">
+                        Podrás ver y descargar el comprobante de pago de tu Tarjeta de Crédito en la opción "Mis Comprobantes" → "Comprobantes de operaciones"o desde la app BBVA, ingresando en la opción "Más" → "Comprobantes".
+                      </span>                
                     </div>
                   </div>
                 </div>
@@ -175,8 +164,7 @@
                       aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseThree"
                     >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sit.
+                    ¿Cómo me descargo la app Neon Wallet?
                     </button>
                   </h2>
                   <div
@@ -185,12 +173,38 @@
                     aria-labelledby="panelsStayOpen-headingThree"
                   >
                     <div class="accordion-body">
-                      <strong>asdsadp.</strong
-                      ><code class="accordion-text"
-                        >Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Expedita tempora est perferendis in nulla
-                        architecto sit non atque reprehenderit doloribus?</code
-                      >
+                      <span class="accordion-text">Ingresá en Google Play (en Android) o en App Store (en iOS), buscá la aplicación y descargala de manera gratuita. Por el momento no está desarrollada para Windows Phone.
+                        Otra opcion es descargarla de nuestra web → <a href="descargas.html" class="faq-descargas"> descargas</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                    ¿Cómo asocio una Cuenta o Caja de Ahorro a la Tarjeta de Débito?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour"
+                  >
+                    <div class="accordion-body">
+                      <span class="accordion-text">Podés asociar tus cuentas a la Tarjeta de Débito a través de:</span>
+                      </br>
+                      <span class="accordion-text">
+                        <ul>                          
+                          <li>En "Visa Débito" en "Posición Global" → "Vinculación de cuenta".</li>
+                        </ul>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -202,7 +216,7 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
           <div class="col-md-6 py-3">
             <img
@@ -211,150 +225,165 @@
               class="footerLogo img-fluid"
             />
           </div>
-          <div class="col-md-6 py-3 pt-4 d-flex justify-content-end flex-wrap">
-            <img
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
-              class="footer-icons"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
-              class="footer-icons"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/discord--v2.png"
-              class="footer-icons"
-            />
-            <img src="img/icon-github.png" alt="" class="footer-icons" />
-            <img
-              src="https://img.icons8.com/color/48/000000/facebook-new.png"
-              class="footer-icons"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"
-              class="footer-icons"
-            />
+          <div class="col-md-6 py-3 d-flex justify-content-end flex-wrap">
+            <a href="#">
+              <img
+                src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+                class="footer-icons"
+              />
+            </a>
+            <a href="https://www.instagram.com/nicoarias____/" target="_blank">
+              <img
+                src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
+                class="footer-icons"
+              />
+            </a>
+            <a href="https://discord.com/users/kero47#1727" target="_blank">
+              <img
+                src="https://img.icons8.com/color/48/000000/discord--v2.png"
+                class="footer-icons"
+              />
+            </a>
+            <a href="https://github.com/nicoarias47" target="_blank"
+              ><img src="img/icon-github.png" alt="" class="footer-icons"
+            /></a>
+            <a href="https://www.facebook.com/ariel.nico/" target="_blank">
+              <img
+                src="https://img.icons8.com/color/48/000000/facebook-new.png"
+                class="footer-icons"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nicolas-arias-657597228/"
+              target="_blank"
+            >
+              <img
+                src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"
+                class="footer-icons"
+              />
+            </a>
           </div>
         </div>
         <div class="row">
-          <div class="col py-3 text-white d-inline-flex flex-column">
+          <div class="col-12 col-sm-3  py-3 d-flex flex-column align-items-center align-items-sm-start">
             <h3 class="footer-title">General</h3>
             <a href="#" class="footer-link">
-              <p class="footer-text">Noticias</p>
+              <span class="footer-text">Noticias</span>
             </a>
             <a href="#" class="footer-link">
-              <p class="footer-text">Multimedia</p>
+              <span class="footer-text">Multimedia</span>
             </a>
             <a href="#" class="footer-link">
-              <p class="footer-text">Trabaja con nosotros</p>
+              <span class="footer-text">Trabaja con nosotros</span>
+            </aspan>
+            <a href="faq.html" class="footer-link">
+              <span class="footer-text">FAQ</span>
             </a>
             <a href="#" class="footer-link">
-              <p class="footer-text">FAQ</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Mas...</p>
-            </a>
-          </div>
-          <div class="col py-3 text-white d-flex flex-column">
-            <h3>Podemos Ayudarte</h3>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Ayuda urgente</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Proteccion de datos personales</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Defensa del consumidor</p>
-            </a>
-            <a href="#" class="footer-link">
-              <p class="footer-text">Personas expuestas publicamente</p>
+              <span class="footer-text">Mas...</span>
             </a>
           </div>
-          <div class="col py-3 text-white d-flex flex-column flex-wrap">
-            <h3>Comunidad</h3>
+          <div class="col-12 col-sm-3  py-3 d-flex flex-column align-items-center align-items-sm-start">
+            <h3 class="footer-title">Podemos Ayudarte</h3>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">Ayuda urgente</span>
+            </a>
+            <a href="#" class="footer-link">
+              <span class="footer-text">Proteccion de datos personales</span>
+            </a>
+            <a href="#" class="footer-link">
+              <span class="footer-text">Defensa del consumidor</span>
+            </a>
+            <a href="#" class="footer-link">
+              <span class="footer-text">Personas expuestas publicamente</span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-3  py-3 d-flex flex-column align-items-center align-items-sm-start">
+            <h3 class="footer-title">Soporte</h3>
+            <a href="#" class="footer-link">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/argentina.png"
                   class="flag"
                 />
                 Argentina
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/brazil.png"
                   class="flag"
                 />
                 Brasil
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/chile.png"
                   class="flag"
                 />
                 Chile
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/colombia.png"
                   class="flag"
                 />
                 Colombia
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/spain-2.png"
                   class="flag"
                 />
                 España
-              </p>
+              </span>
             </a>
           </div>
-          <div class="col py-2 text-white d-flex flex-column flex-wrap">
+          <div class="col-12 col-sm-3  py-2 d-flex flex-column align-items-center align-items-sm-start">
             <br />
             <br />
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/usa.png"
                   class="flag"
                 />
                 Estados Unidos
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/canada.png"
                   class="flag"
                 />
                 Canada
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/australia-flag--v1.png"
                   class="flag"
                 />
                 Australia
-              </p>
+              </span>
             </a>
             <a href="#" class="footer-link">
-              <p class="flag-texto">
+              <span class="footer-text">
                 <img
                   src="https://img.icons8.com/color/48/000000/japan.png"
                   class="flag"
                 />
                 Japon
-              </p>
+              </span>
             </a>
           </div>
         </div>
