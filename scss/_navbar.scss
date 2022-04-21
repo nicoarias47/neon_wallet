@@ -1,0 +1,17 @@
+.navbar {
+  backdrop-filter: blur(20px);
+  background: #0c10193d;
+}
+
+.nav-item {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.active {
+  color: #ffb700;
+}
+
+.navbar-brand {
+  width: 128px;
+}

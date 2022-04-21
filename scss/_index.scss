@@ -1,0 +1,53 @@
+.display-1 {
+  text-transform: initial;
+  font-size: 4.2rem;
+  font-weight: 500;
+}
+
+.display-1-intro {
+  font-weight: 700;
+}
+
+.display-1-description {
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+}
+
+.fondo-1 {
+  background-image: url(../img/img-1.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  margin-top: 10rem;
+}
+
+.fondo-2 {
+  background-image: url(../img/img-5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+}
+
+.fondo-3 {
+  background-image: url(../img/img-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  padding: 0.5rem;
+  margin-top: 10rem;
+}
+
+.fondo-4 {
+  background-image: url(../img/img-4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+}
+
+.img-prueba2 {
+  width: 250px;
+}

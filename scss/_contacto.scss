@@ -1,0 +1,60 @@
+.contacto-texto {
+  border-top: 2px solid #3a3d45;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 3rem;
+}
+
+.contacto-email {
+  border-top: 2px solid #3a3d45;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+}
+
+.contacto-email:hover {
+  color: #ffb700;
+}
+
+.form-control {
+  background-color: #0f1521;
+  border-color: #3a3d45;
+  border-radius: 0.4rem;
+  color: #f5f5f5;
+}
+
+.form-control:focus {
+  background-color: #0f1521;
+  border: none;
+  border-color: #ffb700;
+}
+
+.text-caja {
+  color: #50535b;
+  padding-bottom: 0.1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn-contacto {
+  color: #f5f5f5;
+  background-color: #ffb700;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  box-shadow: 0px 8px 24px rgb(255 184 0 / 48%);
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn-contacto:hover {
+  background-color: #f7c851;
+}
+
+.contact-icons {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}

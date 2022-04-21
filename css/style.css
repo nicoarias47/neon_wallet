@@ -1,22 +1,3 @@
-/* NAV BAR */
-.navbar {
-  backdrop-filter: blur(20px);
-  background: rgba(12, 16, 25, 0.24);
-}
-
-.nav-item {
-  font-size: 1rem;
-  padding-bottom: 1rem;
-}
-
-.active {
-  color: #ffb700;
-}
-
-.navbar-brand {
-  width: 128px;
-}
-
 /*BODY*/
 body {
   font-family: "Manrope", sans-serif;
@@ -39,6 +20,7 @@ svg {
 .container {
   max-width: 1320px;
 }
+
 /* MAIN*/
 .main {
   background-color: #0c1019;
@@ -46,7 +28,23 @@ svg {
   padding-bottom: 5rem;
 }
 
-/* FOOTER*/
+.navbar {
+  backdrop-filter: blur(20px);
+  background: rgba(12, 16, 25, 0.2392156863);
+}
+
+.nav-item {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.active {
+  color: #ffb700;
+}
+
+.navbar-brand {
+  width: 128px;
+}
 
 .footer {
   background-color: #0f1521;
@@ -105,7 +103,12 @@ svg {
   text-decoration: underline;
   padding-top: 0;
 }
-/*INDEX*/
+
+@media (min-width: 576px) {
+  .flag-media {
+    padding-top: 3.4rem;
+  }
+}
 .display-1 {
   text-transform: initial;
   font-size: 4.2rem;
@@ -156,9 +159,11 @@ svg {
   margin-top: 10rem;
 }
 
-/*DESCARGAS*/
+.img-prueba2 {
+  width: 250px;
+}
 
-.back-descargas {
+.fondo-descargas {
   background-image: url(../img/back-descargas.jpg);
   height: 100%;
   width: 100%;
@@ -168,7 +173,7 @@ svg {
 }
 
 .app {
-  background-color: #0f1521ab;
+  background-color: rgba(15, 21, 33, 0.6705882353);
   padding: 6rem;
   border-radius: 0.8rem;
 }
@@ -184,24 +189,34 @@ svg {
   text-align: center;
   font-size: 1rem;
 }
-
 .btn-descargas:focus {
   outline: 0;
   box-shadow: none;
 }
-
 .btn-descargas:hover {
   color: #f5f5f5;
-  background-color: #f7c851;
+  background-color: #ffb700;
+}
+
+.descargas-back {
+  background-color: #0f1521;
+  padding: 2rem;
+  margin: 10rem 0 8rem 0;
+}
+
+.descargas-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.descargas-title p {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .text-descargas {
   color: #f5f5f5;
   padding-top: 1rem;
   text-align: center;
-}
-
-.text-descargas h6 {
   font-weight: bold;
 }
 
@@ -210,39 +225,19 @@ svg {
   padding: 2rem 1rem 2rem 1rem;
   border-radius: 0.8rem;
 }
-
-.box-title {
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-.box-title p {
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.box-description span {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.box-description {
+.box .box-description {
   padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
 }
-
-.box-description li {
+.box .box-description span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.box .box-description li {
   padding-bottom: 0.5rem;
 }
 
-.box-back {
-  background-color: #0f1521;
-  padding: 2rem;
-  margin: 10rem 0 8rem 0;
-}
-
-/*FAQ*/
 .display-3 {
   text-transform: initial;
   font-size: 4rem;
@@ -312,8 +307,6 @@ svg {
   color: #ffb700;
 }
 
-/*CONTACTO*/
-
 .contacto-texto {
   border-top: 2px solid #3a3d45;
   margin-top: 1rem;
@@ -358,7 +351,7 @@ svg {
   border-radius: 8px;
   border: none;
   width: 100%;
-  box-shadow: 0px 8px 24px rgb(255 184 0 / 48%);
+  box-shadow: 0px 8px 24px rgba(255, 184, 0, 0.48);
   padding: 1rem 2rem;
   font-weight: 600;
   text-align: center;
@@ -375,7 +368,6 @@ svg {
   margin-right: 1rem;
 }
 
-/*USUARIO*/
 .login-box {
   height: auto;
   background: #0f1521;
@@ -492,10 +484,4 @@ label {
   color: #ffb700;
 }
 
-/*MEDIA*/
-
-@media (min-width: 576px) {
-  .flag-media {
-    padding-top: 3.4rem;
-  }
-}
+/*# sourceMappingURL=style.css.map */

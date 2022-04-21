@@ -1,0 +1,28 @@
+/*BODY*/
+body {
+  font-family: "Manrope", sans-serif;
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1320px;
+}
+/* MAIN*/
+.main {
+  background-color: #0c1019;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
