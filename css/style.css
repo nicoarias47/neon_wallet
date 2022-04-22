@@ -1,7 +1,6 @@
-/*BODY*/
 body {
   font-family: "Manrope", sans-serif;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 a {
@@ -21,7 +20,6 @@ svg {
   max-width: 1320px;
 }
 
-/* MAIN*/
 .main {
   background-color: #0c1019;
   padding-top: 10rem;
@@ -32,6 +30,9 @@ svg {
   backdrop-filter: blur(20px);
   background: rgba(12, 16, 25, 0.2392156863);
 }
+.navbar .navbar-brand {
+  width: 128px;
+}
 
 .nav-item {
   font-size: 1rem;
@@ -40,10 +41,6 @@ svg {
 
 .active {
   color: #ffb700;
-}
-
-.navbar-brand {
-  width: 128px;
 }
 
 .footer {
@@ -65,12 +62,23 @@ svg {
   text-decoration: none;
   color: #f5f5f5;
 }
-
 .footer-link:hover {
   color: #ffb700;
 }
-
-.footer-terminos:hover {
+.footer-link .footer-text {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  display: inline-block;
+}
+.footer-link .footer-text .flag {
+  width: 1.2rem;
+}
+.footer-link .footer-terminos {
+  text-decoration: underline;
+  padding-top: 0;
+}
+.footer-link .footer-terminos:hover {
   color: #ffb700;
 }
 
@@ -82,26 +90,10 @@ svg {
   color: #ffb700;
 }
 
-.flag {
-  width: 1.2rem;
-}
-
 .footer-title {
   text-transform: initial;
   font-weight: 500;
   font-size: 1.6rem;
-}
-
-.footer-text {
-  font-weight: 400;
-  font-size: 1rem;
-  margin-top: 0.8rem;
-  display: inline-block;
-}
-
-.footer-terminos {
-  text-decoration: underline;
-  padding-top: 0;
 }
 
 @media (min-width: 576px) {
@@ -114,12 +106,10 @@ svg {
   font-size: 4.2rem;
   font-weight: 500;
 }
-
-.display-1-intro {
+.display-1 .display-1-intro {
   font-weight: 700;
 }
-
-.display-1-description {
+.display-1 .display-1-description {
   font-size: 1.3rem;
   margin-top: 1.2rem;
 }
@@ -247,10 +237,13 @@ svg {
 .accordion {
   padding: 0;
 }
+.accordion .accordion-item {
+  border: none;
+}
 
 .accordion-button {
   background-color: #0c1019;
-  color: rgb(151, 151, 151);
+  color: #979797;
   padding: 0;
   font-size: 1.6rem;
   padding: 1rem 0 0.5rem 0;
@@ -258,13 +251,23 @@ svg {
   text-transform: initial;
   margin-top: 1.5rem;
 }
-
 .accordion-button:focus {
   outline: 0;
   border-color: inherit;
   box-shadow: none;
   background-color: #0c1019;
   border: none;
+}
+.accordion-button:not(.collapsed) {
+  color: #f5f5f5;
+  background-color: #0c1019;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAXElEQVRIie3NsQmAMBRF0fudQ8F1zByC4D7OknEiAef4VgEtgk3SyDvda94FERGRCnsOjwTgAObGnRNnt0CshTMwNY4Wly2MZQydIp/eYWcDUodOwlg7/IqIyB/dLrwNkGcR42UAAAAASUVORK5CYII=);
+  width: 15px;
+}
+.accordion-button::after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAApklEQVRIie3VTQrCMBCG4Xc8hj/gddqFeAhByH28inOcFmkXeolxo5AsXHSsEnS+VZLF90ACE4jUHDuzN+VmytWUnadDXLAyAsvHdpSG9dSOhQfOUICVp8ALv52AA/49uBggprTACdjO7PQYSVr0FXwBNjOjzxQTrpI3No5A9wGnQzjkB95PwoqSZnpPJVcdcMD/DPfZ2jVwfLCRgAEYEJKrI/Kt3AGO0iOMsPNZ/wAAAABJRU5ErkJggg==);
 }
 
 .accordion-body {
@@ -274,35 +277,15 @@ svg {
   font-size: 1.1rem;
   text-transform: initial;
 }
-
-.accordion-text {
+.accordion-body .accordion-text {
   display: inline-block;
   font-weight: 400;
   padding-top: 1rem;
 }
 
-.accordion-item {
-  border: none;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #f5f5f5;
-  background-color: #0c1019;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAXElEQVRIie3NsQmAMBRF0fudQ8F1zByC4D7OknEiAef4VgEtgk3SyDvda94FERGRCnsOjwTgAObGnRNnt0CshTMwNY4Wly2MZQydIp/eYWcDUodOwlg7/IqIyB/dLrwNkGcR42UAAAAASUVORK5CYII=);
-  width: 15px;
-}
-
-.accordion-button::after {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAApklEQVRIie3VTQrCMBCG4Xc8hj/gddqFeAhByH28inOcFmkXeolxo5AsXHSsEnS+VZLF90ACE4jUHDuzN+VmytWUnadDXLAyAsvHdpSG9dSOhQfOUICVp8ALv52AA/49uBggprTACdjO7PQYSVr0FXwBNjOjzxQTrpI3No5A9wGnQzjkB95PwoqSZnpPJVcdcMD/DPfZ2jVwfLCRgAEYEJKrI/Kt3AGO0iOMsPNZ/wAAAABJRU5ErkJggg==);
-}
-
 .faq-descargas {
   color: #ffb700;
 }
-
 .faq-descargas:hover {
   color: #ffb700;
 }
@@ -319,7 +302,6 @@ svg {
   margin-top: 1rem;
   padding-top: 0.8rem;
 }
-
 .contacto-email:hover {
   color: #ffb700;
 }
@@ -330,7 +312,6 @@ svg {
   border-radius: 0.4rem;
   color: #f5f5f5;
 }
-
 .form-control:focus {
   background-color: #0f1521;
   border: none;
@@ -351,13 +332,12 @@ svg {
   border-radius: 8px;
   border: none;
   width: 100%;
-  box-shadow: 0px 8px 24px rgba(255, 184, 0, 0.48);
+  box-shadow: 0px 8px 24px rgba(255, 184, 0, 0.4784313725);
   padding: 1rem 2rem;
   font-weight: 600;
   text-align: center;
   font-size: 1rem;
 }
-
 .btn-contacto:hover {
   background-color: #f7c851;
 }
@@ -375,27 +355,27 @@ svg {
   padding: 1rem;
   border-radius: 0.8rem;
 }
-
-.login-img {
+.login-box .login-img {
   height: 100px;
   font-size: 80px;
   line-height: 100px;
 }
-
-.login-title {
+.login-box .login-title {
   margin-top: 1rem;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #f5f5f5;
 }
-
-.login-form {
+.login-box .login-form {
   margin-top: 1.8rem;
   text-align: left;
 }
-
-.login-text {
+.login-box .form-grupo {
+  outline: 0px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.login-box .form-grupo .login-text {
   color: #f5f5f5;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -423,11 +403,6 @@ svg {
   font-weight: bold;
   padding-left: 0px;
   color: #f5f5f5;
-}
-
-.form-grupo {
-  outline: 0px;
-  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .form-control:focus {
@@ -467,7 +442,6 @@ label {
   letter-spacing: 1px;
   box-shadow: 0 1px 3px #0f1521, 0 1px 2px #0f1521;
 }
-
 #btn-login:hover {
   background-color: #ffb700;
   color: whitesmoke;
@@ -479,7 +453,6 @@ label {
   text-decoration: none;
   color: #f5f5f5;
 }
-
 .btn-register:hover {
   color: #ffb700;
 }

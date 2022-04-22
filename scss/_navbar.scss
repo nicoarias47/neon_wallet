@@ -1,6 +1,10 @@
 .navbar {
   backdrop-filter: blur(20px);
   background: #0c10193d;
+
+  .navbar-brand {
+    width: 128px;
+  }
 }
 
 .nav-item {
@@ -10,8 +14,4 @@
 
 .active {
   color: #ffb700;
-}
-
-.navbar-brand {
-  width: 128px;
 }

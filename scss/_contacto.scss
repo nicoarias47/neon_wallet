@@ -9,23 +9,23 @@
   border-top: 2px solid #3a3d45;
   margin-top: 1rem;
   padding-top: 0.8rem;
-}
 
-.contacto-email:hover {
-  color: #ffb700;
+  &:hover {
+    color: $yellow-color;
+  }
 }
 
 .form-control {
-  background-color: #0f1521;
+  background-color: $blue-color;
   border-color: #3a3d45;
   border-radius: 0.4rem;
-  color: #f5f5f5;
-}
+  color: $white-color;
 
-.form-control:focus {
-  background-color: #0f1521;
-  border: none;
-  border-color: #ffb700;
+  &:focus {
+    background-color: $blue-color;
+    border: none;
+    border-color: $yellow-color;
+  }
 }
 
 .text-caja {
@@ -37,20 +37,20 @@
 }
 
 .btn-contacto {
-  color: #f5f5f5;
-  background-color: #ffb700;
+  color: $white-color;
+  background-color: $yellow-color;
   border-radius: 8px;
   border: none;
   width: 100%;
-  box-shadow: 0px 8px 24px rgb(255 184 0 / 48%);
+  box-shadow: 0px 8px 24px #ffb8007a;
   padding: 1rem 2rem;
   font-weight: 600;
   text-align: center;
   font-size: 1rem;
-}
 
-.btn-contacto:hover {
-  background-color: #f7c851;
+  &:hover {
+    background-color: #f7c851;
+  }
 }
 
 .contact-icons {

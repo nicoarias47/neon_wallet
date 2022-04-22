@@ -1,7 +1,6 @@
-/*BODY*/
 body {
   font-family: "Manrope", sans-serif;
-  color: whitesmoke;
+  color: $white-color;
 }
 
 a {
@@ -20,9 +19,9 @@ svg {
 .container {
   max-width: 1320px;
 }
-/* MAIN*/
+
 .main {
-  background-color: #0c1019;
+  background-color: $black-color;
   padding-top: 10rem;
   padding-bottom: 5rem;
 }
