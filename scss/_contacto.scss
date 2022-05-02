@@ -1,30 +1,44 @@
+@mixin contacto($bt, $mt, $pt, $pb) {
+  border-top: $bt;
+  margin-top: $mt;
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
 .contacto-texto {
-  border-top: 2px solid #3a3d45;
-  margin-top: 1rem;
-  padding-top: 0.8rem;
-  padding-bottom: 3rem;
+  @include contacto(2px solid #3a3d45, 1rem, 0.8rem, 3rem);
 }
 
 .contacto-email {
-  border-top: 2px solid #3a3d45;
-  margin-top: 1rem;
-  padding-top: 0.8rem;
+  @include contacto(2px solid #3a3d45, 1rem, 0.8rem, 0px);
+  font-size: 1.2rem;
+  font-weight: 400;
 
   &:hover {
-    color: $yellow-color;
+    color: $tertiary-color;
+  }
+}
+
+.intro-contacto {
+  font-size: 2.5rem;
+  font-weight: 500;
+
+  &--text {
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 }
 
 .form-control {
-  background-color: $blue-color;
+  background-color: $secondary-color;
   border-color: #3a3d45;
   border-radius: 0.4rem;
-  color: $white-color;
+  color: $font-white;
 
   &:focus {
-    background-color: $blue-color;
+    background-color: $secondary-color;
     border: none;
-    border-color: $yellow-color;
+    border-color: $tertiary-color;
   }
 }
 
@@ -37,8 +51,8 @@
 }
 
 .btn-contacto {
-  color: $white-color;
-  background-color: $yellow-color;
+  color: $font-white;
+  background-color: $tertiary-color;
   border-radius: 8px;
   border: none;
   width: 100%;

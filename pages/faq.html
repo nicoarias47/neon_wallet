@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neo Wallet</title>    
+    <title>Preguntas frecuentes | Neon Wallet</title>
+    <!-- Palabra clave | descripcion -->
+    <meta name="keywords" content="billetera electronica, billetera, wallet, appstore, google play, finanzas, tecnologia, descentralizado, dolares, intercambio, exchange, telefono">
+    <meta name="description" content="Creá tu billetera virtual para almacenar, comprar, vender, enviar y recibir dinero de forma fácil y segura. Descubrí la nueva economía digital.">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../img/fav_icon.png" type="image/x-icon" />
     <!-- BOOTSTRAP CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -17,10 +22,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="img/fav_icon.png" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- ICONOS8 -->
@@ -37,7 +40,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top animate__animated animate__fadeInDown">
         <div class="container-lg">
           <a class="navbar-brand" href="index.html"
-            ><img src="img/neon-wallet-logo.png" alt="neon-wallet-logo" />
+            ><img src="../img/neon-wallet-logo.png" alt="neon-wallet-logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -51,9 +54,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mt-lg-4">
+            <ul class="navbar-nav ms-auto mb-2 mt-lg-4 active">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link active" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -90,78 +93,129 @@
           </div>
         </div>
       </nav>
-    </header>
+    </header>  
     <!-- MAIN -->
-    <main class="main">
-      <div class="container-lg d-flex justify-content-center">
-        <div class="row d-flex"></div>
-        <div class="col-lg-5 col-md-6 col-sm-7 login-box">
-          <div class="col-lg-12 login-img">
-            <img src="img/user-img.png" alt="iniciar secion" class="user-img"/>
-          </div>
-          <div class="col-lg-12 login-title">SIGN IN</div>
-          <div class="col-lg-12 login-form">
-            <div class="col-lg-12 login-form">
-              <form action="">
-                <div class="form-grupo">
-                  <label for="email" class="form-control-label"
-                    >Enter email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                  />
-                </div>
-                <div class="form-grupo">
-                  <label for="pwd" class="form-control-label"
-                    >Enter password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="pwd"
-                    name="pswd"
-                  />
-                </div>
-                <div class="col-lg-12 form-grupo">
+    <main class="main">      
+      <section class="py-5 main-section d-flex align-items-center">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col">              
+              <h1 class="display-3">FAQ</h1>            
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                    ¿Cómo hago una transferencia con la app Neon Wallet?
+                    </button>
+                  </h2>
                   <div
-                    class="col-lg-12 login-btn login-text d-flex justify-content-between pb-5"
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
                   >
-                    <label class="form-check-label">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        name="remember"
-                      />
-                      Remember me
-                    </label>
-                    <div>
-                      <a href="#" class="btn-register">Register</a>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 login-btn login-button">
-                    <div class="col-lg-6 login-btm login-text">
-                      <!-- Error Message -->
-                    </div>
-                    <div class="col-lg-6 login-btm login- me-auto">
-                      <button
-                        type="submit"
-                        class="btn-outline-primary"
-                        id="btn-login"
-                      >
-                        LOGIN
-                      </button>
+                    <div class="accordion-body">               
+                      <span class="accordion-text">Con la app podés realizar transferencias en pesos y dólares.</span>
+                      </br>
+                      <span class="accordion-text">Para realizarla, ingresá a la aplicación con tu Usuario y Clave Digital y seleccioná la opción "Transferencias" del menú principal. Solo tenés que elegir qué tipo de cuentas disponés para realizar la transferencia.</span>
+                                              
                     </div>
                   </div>
                 </div>
-              </form>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                    Desde la app Neon Wallet, ¿puedo pagar mi Tarjeta de Crédito?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body">
+                      <span class="accordion-text">Pagá tu Tarjeta de Crédito con débito en el día desde la app. También podés modificar el importe a debitar al vencimiento. Si no estás adherido al débito automático en Cuenta Monetaria deberás seleccionarla al momento de pagar.</span>
+                      <span class="accordion-text">
+                        Para realizar el pago ingresá al menú contextual (para Android) o al menú "Tarjetas" (para iOS), seleccioná la tarjeta que quieras pagar y la opción "Pago Tarjeta" que aparece debajo del detalle de consumos (en iOS) o desde el menú contextual (en Android) y elegí el Tipo de Pago requerido.
+                      </span>      
+                      <span class="accordion-text">
+                        Podrás ver y descargar el comprobante de pago de tu Tarjeta de Crédito en la opción "Mis Comprobantes" → "Comprobantes de operaciones"o desde la app BBVA, ingresando en la opción "Más" → "Comprobantes".
+                      </span>                
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                    ¿Cómo me descargo la app Neon Wallet?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree"
+                  >
+                    <div class="accordion-body">
+                      <span class="accordion-text">Ingresá en Google Play (en Android) o en App Store (en iOS), buscá la aplicación y descargala de manera gratuita. Por el momento no está desarrollada para Windows Phone.
+                        Otra opcion es descargarla de nuestra web → <a href="descargas.html" class="faq-descargas"> descargas</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                    ¿Cómo asocio una Cuenta o Caja de Ahorro a la Tarjeta de Débito?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour"
+                  >
+                    <div class="accordion-body">
+                      <span class="accordion-text">Podés asociar tus cuentas a la Tarjeta de Débito a través de:</span>
+                      </br>
+                      <span class="accordion-text">
+                        <ul>                          
+                          <li>En "Visa Débito" en "Posición Global" → "Vinculación de cuenta".</li>
+                        </ul>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-2"></div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
@@ -169,7 +223,7 @@
         <div class="row">
           <div class="col-md-6 py-3">
             <img
-              src="img/neon-wallet-logo.png"
+              src="../img/neon-wallet-logo.png"
               alt="neon-wallet-logo"
               class="footerLogo img-fluid"
             />
@@ -194,7 +248,7 @@
               />
             </a>
             <a href="https://github.com/nicoarias47" target="_blank"
-              ><img src="img/icon-github.png" alt="github" class="footer-icons"
+              ><img src="../img/icon-github.png" alt="github" class="footer-icons"
             /></a>
             <a href="https://www.facebook.com/ariel.nico/" target="_blank">
               <img

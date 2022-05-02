@@ -20,15 +20,57 @@ svg {
   max-width: 1320px;
 }
 
-.main {
+main {
   background-color: #0c1019;
-  padding-top: 10rem;
   padding-bottom: 5rem;
+}
+
+.main-section {
+  height: 100vh;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffb700 #0f1521;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #0f1521;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #0f1521;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #0f1521;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #ffb700;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ffb700;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ffb700;
 }
 
 .navbar {
   backdrop-filter: blur(20px);
   background: rgba(12, 16, 25, 0.2392156863);
+  margin-bottom: 1rem;
 }
 .navbar .navbar-brand {
   width: 128px;
@@ -96,57 +138,91 @@ svg {
   font-size: 1.6rem;
 }
 
-@media (min-width: 576px) {
-  .flag-media {
-    padding-top: 3.4rem;
-  }
+.background-index {
+  background-image: url(../img/fondo-intro-1.png);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  background-attachment: fixed;
 }
+
 .display-1 {
   text-transform: initial;
   font-size: 4.2rem;
   font-weight: 500;
 }
-.display-1 .display-1-intro {
+.display-1-intro {
   font-weight: 700;
 }
-.display-1 .display-1-description {
+.display-1-description {
   font-size: 1.3rem;
   margin-top: 1.2rem;
 }
 
-.fondo-1 {
+.intro {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.intro--description {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.extras {
+  padding-top: 2rem;
+}
+
+.extras__cartas {
+  background-color: #0f1521;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.extras__cartas--title {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.extras__cartas--description {
+  padding-top: 0.5rem;
+  font-weight: 300;
+  font-size: 1.2;
+}
+.extras__cartas--icons {
+  width: 50px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 183, 0, 0.6549019608));
+}
+
+.fondo-1, .fondo-3 {
   background-image: url(../img/img-1.jpg);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5rem;
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
-.fondo-2 {
+.fondo-2, .fondo-4 {
   background-image: url(../img/img-5.png);
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .fondo-3 {
   background-image: url(../img/img-3.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-top: 200px;
-  padding: 0.5rem;
-  margin-top: 10rem;
 }
 
 .fondo-4 {
   background-image: url(../img/img-4.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 10rem;
 }
 
 .img-prueba2 {
@@ -155,7 +231,7 @@ svg {
 
 .fondo-descargas {
   background-image: url(../img/back-descargas.jpg);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-position: center center;
   background-size: cover;
@@ -163,8 +239,11 @@ svg {
 }
 
 .app {
+  padding-top: 6rem;
+}
+.app--item {
   background-color: rgba(15, 21, 33, 0.6705882353);
-  padding: 6rem;
+  padding: 5rem;
   border-radius: 0.8rem;
 }
 
@@ -185,7 +264,7 @@ svg {
 }
 .btn-descargas:hover {
   color: #f5f5f5;
-  background-color: #ffb700;
+  background-color: #f7c851;
 }
 
 .descargas-back {
@@ -202,12 +281,25 @@ svg {
   font-size: 1rem;
   font-weight: 300;
 }
+.descargas-title .descargas-icons {
+  width: 2rem;
+  display: block;
+  filter: drop-shadow(0px 0px 10px rgba(255, 183, 0, 0.6549019608));
+}
 
-.text-descargas {
-  color: #f5f5f5;
+/*MAPS*/
+.tDescargas {
   padding-top: 1rem;
   text-align: center;
   font-weight: bold;
+}
+
+.tDescargas--iphone {
+  color: #1dc0ed;
+}
+
+.tDescargas--android {
+  color: #13b50e;
 }
 
 .box {
@@ -301,9 +393,21 @@ svg {
   border-top: 2px solid #3a3d45;
   margin-top: 1rem;
   padding-top: 0.8rem;
+  padding-bottom: 0px;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 .contacto-email:hover {
   color: #ffb700;
+}
+
+.intro-contacto {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.intro-contacto--text {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .form-control {
@@ -348,37 +452,40 @@ svg {
   margin-right: 1rem;
 }
 
-.login-box {
+.login {
+  padding-top: 4rem;
+}
+.login .login-box {
   height: auto;
   background: #0f1521;
   text-align: center;
   padding: 1rem;
   border-radius: 0.8rem;
+  font-family: "Roboto", sans-serif;
 }
-.login-box .login-img {
+.login .login-box .login-img {
   height: 100px;
   font-size: 80px;
   line-height: 100px;
 }
-.login-box .login-title {
+.login .login-box .login-title {
   margin-top: 1rem;
   text-align: center;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #f5f5f5;
 }
-.login-box .login-form {
+.login .login-box .login-form {
   margin-top: 1.8rem;
   text-align: left;
 }
-.login-box .form-grupo {
+.login .login-box .form-grupo {
   outline: 0px;
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
-.login-box .form-grupo .login-text {
+.login .login-box .form-grupo .login-text {
   color: #f5f5f5;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 #email {
@@ -455,6 +562,68 @@ label {
 }
 .btn-register:hover {
   color: #ffb700;
+}
+
+.form-check-input {
+  background-color: #f5f5f5;
+}
+
+.form-check-input:checked {
+  background-color: #ffb700;
+  border-color: #ffb700;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.recordarme {
+  padding-bottom: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .flag-media {
+    padding-top: 3.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .background-index {
+    background-size: contain;
+  }
+}
+@media (max-width: 768px) {
+  .main-section {
+    height: auto;
+  }
+
+  /*INDEX*/
+  .display-1 {
+    padding-top: 4rem;
+  }
+
+  /*DESCARGAS*/
+  .app {
+    padding-top: 2rem;
+  }
+
+  .fondo-descargas {
+    height: auto;
+  }
+
+  /*FAQ*/
+  .display-3 {
+    padding-top: 4rem;
+  }
+
+  /*CONTACTO*/
+  .contactanos {
+    padding-top: 4rem;
+  }
+
+  /*USUARIO*/
+  .login {
+    padding-top: 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

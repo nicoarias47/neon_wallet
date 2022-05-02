@@ -1,0 +1,46 @@
+@media (min-width: 576px) {
+  .flag-media {
+    padding-top: 3.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-index {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    height: auto;
+  }
+
+  /*INDEX*/
+  .display-1 {
+    padding-top: 4rem;
+  }
+
+  /*DESCARGAS*/
+  .app {
+    padding-top: 2rem;
+  }
+
+  .fondo-descargas {
+    height: auto;
+  }
+
+  /*FAQ*/
+  .display-3 {
+    padding-top: 4rem;
+  }
+
+  /*CONTACTO*/
+  .contactanos {
+    padding-top: 4rem;
+  }
+
+  /*USUARIO*/
+  .login {
+    padding-top: 5rem;
+  }
+}

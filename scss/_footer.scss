@@ -1,5 +1,5 @@
 .footer {
-  background-color: $blue-color;
+  background-color: $secondary-color;
 }
 
 .footerLogo {
@@ -15,10 +15,10 @@
 .footer-link {
   list-style: none;
   text-decoration: none;
-  color: $white-color;
+  color: $font-white;
 
   &:hover {
-    color: $yellow-color;
+    color: $tertiary-color;
   }
 
   .footer-text {
@@ -37,7 +37,7 @@
     padding-top: 0;
 
     &:hover {
-      color: $yellow-color;
+      color: $tertiary-color;
     }
   }
 }
@@ -47,17 +47,11 @@
 }
 
 .flag-texto:hover {
-  color: $yellow-color;
+  color: $tertiary-color;
 }
 
 .footer-title {
   text-transform: initial;
   font-weight: 500;
   font-size: 1.6rem;
-}
-
-@media (min-width: 576px) {
-  .flag-media {
-    padding-top: 3.4rem;
-  }
 }
