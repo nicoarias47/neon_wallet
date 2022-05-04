@@ -1,0 +1,57 @@
+.footer {
+  background-color: $secondary-color;
+}
+
+.footerLogo {
+  width: 8rem;
+}
+
+.footer-icons {
+  width: 35px;
+  height: 35px;
+  margin-left: 1rem;
+}
+
+.footer-link {
+  list-style: none;
+  text-decoration: none;
+  color: $font-white;
+
+  &:hover {
+    color: $tertiary-color;
+  }
+
+  .footer-text {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    display: inline-block;
+
+    .flag {
+      width: 1.2rem;
+    }
+  }
+
+  .footer-terminos {
+    text-decoration: underline;
+    padding-top: 0;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+  }
+}
+
+.footer-fin {
+  border-top: 3px #3a3d45 solid;
+}
+
+.flag-texto:hover {
+  color: $tertiary-color;
+}
+
+.footer-title {
+  text-transform: initial;
+  font-weight: 500;
+  font-size: 1.6rem;
+}

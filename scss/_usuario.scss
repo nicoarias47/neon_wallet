@@ -1,0 +1,136 @@
+.login {
+  padding-top: 4rem;
+
+  .login-box {
+    height: auto;
+    background: $secondary-color;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-family: "Roboto", sans-serif;
+
+    .login-img {
+      height: 100px;
+      font-size: 80px;
+      line-height: 100px;
+    }
+
+    .login-title {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 500;
+      color: $font-white;
+    }
+
+    .login-form {
+      margin-top: 1.8rem;
+      text-align: left;
+    }
+
+    .form-grupo {
+      outline: 0px;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+
+      .login-text {
+        color: $font-white;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+#email {
+  background-color: $secondary-color;
+  border: none;
+  border-bottom: 2px solid $tertiary-color;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  margin-bottom: 2rem;
+  padding-left: 0px;
+  color: $font-white;
+}
+
+#pwd {
+  background-color: $secondary-color;
+  border: none;
+  border-bottom: 2px solid $tertiary-color;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  padding-left: 0px;
+  color: $font-white;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 2px solid $tertiary-color;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  outline: 0;
+  padding-left: 0px;
+  color: $font-white;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+.form-control-label {
+  font-size: 1rem;
+  color: #50535b;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#btn-login {
+  background-color: $secondary-color;
+  border-color: $tertiary-color;
+  color: $tertiary-color;
+  border-radius: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px $secondary-color, 0 1px 2px $secondary-color;
+
+  &:hover {
+    background-color: $tertiary-color;
+    color: whitesmoke;
+    right: 0px;
+  }
+}
+
+.btn-register {
+  list-style: none;
+  text-decoration: none;
+  color: $font-white;
+
+  &:hover {
+    color: $tertiary-color;
+  }
+}
+
+.form-check-input {
+  background-color: $font-white;
+}
+
+.form-check-input:checked {
+  background-color: $tertiary-color;
+  border-color: $tertiary-color;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.recordarme {
+  padding-bottom: 1.2rem;
+}

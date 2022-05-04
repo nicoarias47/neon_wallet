@@ -1,0 +1,95 @@
+.background-index {
+  background-image: url(../img/entrada.png);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 85% 100%;
+}
+
+.display-1 {
+  text-transform: initial;
+  font-size: 4.2rem;
+  font-weight: 500;
+
+  &-intro {
+    font-weight: 700;
+  }
+
+  &-description {
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+  }
+}
+
+.intro {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  &--description {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
+
+.extras {
+  padding-top: 2rem;
+}
+
+.extras__cartas {
+  background-color: $secondary-color;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &--title {
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  &--description {
+    padding-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1.2;
+  }
+  &--icons {
+    width: 50px;
+    filter: drop-shadow(0px 0px 10px #ffc107ac);
+  }
+}
+
+.fondo-1 {
+  background-image: url(../img/img-1.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  margin-top: 4rem;
+}
+
+.fondo-2 {
+  background-image: url(../img/img-5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+}
+
+.fondo-3 {
+  @extend .fondo-1;
+  background-image: url(../img/img-3.jpg);
+}
+
+.fondo-4 {
+  @extend .fondo-2;
+  background-image: url(../img/img-4.png);
+}
+
+.img-prueba2 {
+  width: 250px;
+}
