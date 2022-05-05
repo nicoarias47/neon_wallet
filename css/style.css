@@ -139,7 +139,7 @@ main {
 }
 
 .background-index {
-  background-image: url(../img/entrada.png);
+  background-image: url(../img/img-entrada.png);
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -149,14 +149,10 @@ main {
 .display-1 {
   text-transform: initial;
   font-size: 4.2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
-.display-1-intro {
-  font-weight: 700;
-}
-.display-1-description {
-  font-size: 1.3rem;
-  margin-top: 1.2rem;
+.display-1-neon {
+  color: #ffb700;
 }
 
 .intro {
@@ -165,8 +161,24 @@ main {
   font-weight: bold;
 }
 .intro--description {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  color: rgba(211, 209, 209, 0.7294117647);
+}
+.intro--btn {
+  color: #f5f5f5;
+  background-color: #ffb700;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 8px 24px rgba(255, 184, 0, 0.4784313725);
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.intro--btn:hover {
+  background-color: #f7c851;
 }
 
 .extras {
@@ -192,40 +204,68 @@ main {
   padding-top: 0.5rem;
   font-weight: 300;
   font-size: 1.2;
+  color: rgba(211, 209, 209, 0.7294117647);
 }
 .extras__cartas--icons {
   width: 50px;
   filter: drop-shadow(0px 0px 10px rgba(255, 193, 7, 0.6745098039));
 }
 
-.fondo-1, .fondo-3 {
-  background-image: url(../img/img-1.jpg);
+.fondo-1 {
+  background-image: url(../img/c.jpg);
   height: 100vh;
   width: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5rem;
-  margin-top: 4rem;
+  border-top: 1px solid #ffc107;
 }
 
-.fondo-2, .fondo-4 {
-  background-image: url(../img/img-5.png);
-  background-size: contain;
+.fondo-2 {
+  background-image: url(../img/b.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 5rem;
+  padding: 0.5rem;
+  border-top: 1px solid #ffc107;
 }
 
 .fondo-3 {
-  background-image: url(../img/img-3.jpg);
+  background-image: url(../img/a.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  border-top: 1px solid #ffc107;
 }
 
 .fondo-4 {
-  background-image: url(../img/img-4.png);
+  background-image: url(../img/23.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  border-top: 1px solid #ffc107;
+  border-bottom: 1px solid #ffc107;
 }
 
 .img-prueba2 {
   width: 250px;
+}
+
+.text__app {
+  background-color: rgba(15, 21, 33, 0.4941176471);
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  backdrop-filter: blur(20px);
+  color: #f5f5f5;
 }
 
 .fondo-descargas {
@@ -413,7 +453,7 @@ main {
 }
 
 .intro-contacto {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 500;
 }
 .intro-contacto--text {
@@ -597,11 +637,6 @@ label {
     padding-top: 3.4rem;
   }
 }
-@media (max-width: 576px) {
-  .background-index {
-    background-size: contain;
-  }
-}
 @media (max-width: 768px) {
   .main-section {
     height: auto;
@@ -609,7 +644,8 @@ label {
 
   /*INDEX*/
   .display-1 {
-    padding-top: 4rem;
+    padding-top: 6rem;
+    font-size: 3rem;
   }
 
   /*DESCARGAS*/
@@ -634,6 +670,20 @@ label {
   /*USUARIO*/
   .login {
     padding-top: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .background-index {
+    background-size: contain;
+  }
+
+  .display-1 {
+    font-size: 2.5rem;
+  }
+
+  .intro--btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
   }
 }
 
