@@ -330,19 +330,10 @@ main {
   filter: drop-shadow(0px 0px 10px rgba(255, 193, 7, 0.6745098039));
 }
 
-/*MAPS*/
 .tDescargas {
   padding-top: 1rem;
   text-align: center;
   font-weight: bold;
-}
-
-.tDescargas--iphone {
-  color: #1dc0ed;
-}
-
-.tDescargas--android {
-  color: #13b50e;
 }
 
 .box {

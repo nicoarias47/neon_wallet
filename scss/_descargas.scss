@@ -60,21 +60,10 @@
   }
 }
 
-/*MAPS*/
-$app: (
-  iphone: #1dc0ed,
-  android: #13b50e,
-);
-
 .tDescargas {
   padding-top: 1rem;
   text-align: center;
   font-weight: bold;
-}
-@each $name, $color in $app {
-  .tDescargas--#{$name} {
-    color: $color;
-  }
 }
 
 .box {
