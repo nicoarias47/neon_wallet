@@ -239,7 +239,7 @@ main {
   background-image: url(../img/background-1.jpg);
   height: 100vh;
   width: 100%;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5rem;
@@ -250,7 +250,7 @@ main {
   background-image: url(../img/background-2.jpg);
   height: 100vh;
   width: 100%;
-  background-position: center center;
+  background-position: 60% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5rem;
@@ -281,7 +281,7 @@ main {
 }
 
 .newsletter {
-  background-image: url(/img/noticias.jpg);
+  background-image: url(../img/noticias.jpg);
   height: 300px;
   width: auto;
   margin-top: 5rem;
