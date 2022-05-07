@@ -168,3 +168,19 @@
   background-color: #0f152186;
   width: 500px;
 }
+
+.popover {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: $secondary-color;
+
+  &-body {
+    color: $font-white;
+    padding: 0.3rem;
+  }
+
+  &-arrow {
+    opacity: 0;
+  }
+}

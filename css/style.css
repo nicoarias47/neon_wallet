@@ -301,11 +301,25 @@ main {
   width: 500px;
 }
 
+.popover {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: #0f1521;
+}
+.popover-body {
+  color: #f5f5f5;
+  padding: 0.3rem;
+}
+.popover-arrow {
+  opacity: 0;
+}
+
 .fondo-descargas {
   background-image: url(../img/background-5.jpg);
   height: 100vh;
   width: 100%;
-  background-position: 50% 25%;
+  background-position: 35% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -323,7 +337,7 @@ main {
 .display-2-description {
   display: block;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .btn-descargas {
