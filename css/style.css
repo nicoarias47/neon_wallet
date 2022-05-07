@@ -184,7 +184,7 @@ main {
 
 .text__app {
   background-color: rgba(15, 21, 33, 0.4941176471);
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
   border-radius: 0.8rem;
   backdrop-filter: blur(50px);
@@ -200,8 +200,9 @@ main {
 }
 
 .img-cel {
-  width: 250px;
-  margin-top: 2.5rem;
+  max-width: 225px;
+  margin-top: 2rem;
+  opacity: 0.9;
 }
 
 .extras {
@@ -238,7 +239,7 @@ main {
   background-image: url(../img/background-1.jpg);
   height: 100vh;
   width: 100%;
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5rem;
@@ -271,7 +272,7 @@ main {
   background-image: url(../img/background-4.jpg);
   height: 100vh;
   width: 100%;
-  background-position: center center;
+  background-position: 50% 75%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5rem;
@@ -280,21 +281,28 @@ main {
 }
 
 .fondo-descargas {
-  background-image: url(../img/back-descargas.jpg);
+  background-image: url(../img/background-5.jpg);
   height: 100vh;
   width: 100%;
-  background-position: center center;
+  background-position: 50% 25%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.app {
-  padding-top: 6rem;
+.display-2 {
+  text-transform: initial;
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f5f5f5;
 }
-.app--item {
-  background-color: rgba(15, 21, 33, 0.6705882353);
-  padding: 5rem;
-  border-radius: 0.8rem;
+.display-2--neon {
+  color: #ffb700;
+}
+.display-2-description {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .btn-descargas {
@@ -302,11 +310,11 @@ main {
   background-color: #ffb700;
   border-radius: 8px;
   border: none;
-  width: 100%;
   padding: 1rem 1.5rem;
   font-weight: 600;
   text-align: center;
   font-size: 1rem;
+  margin-left: 1rem;
 }
 .btn-descargas:focus {
   outline: 0;
@@ -320,7 +328,7 @@ main {
 .descargas-back {
   background-color: #0f1521;
   padding: 2rem;
-  margin: 10rem 0 8rem 0;
+  margin: 5rem 0 0 0;
 }
 
 .descargas-title {
@@ -365,6 +373,7 @@ main {
   text-transform: initial;
   font-size: 4rem;
   font-weight: 400;
+  padding-top: 6rem;
 }
 
 .accordion {
@@ -654,15 +663,11 @@ label {
     width: 200px;
   }
 
+  .extras__cartas--title {
+    font-size: 1.2rem;
+  }
+
   /*DESCARGAS*/
-  .app {
-    padding-top: 2rem;
-  }
-
-  .fondo-descargas {
-    height: auto;
-  }
-
   /*FAQ*/
   .display-3 {
     padding-top: 4rem;
@@ -671,6 +676,10 @@ label {
   /*CONTACTO*/
   .contactanos {
     padding-top: 4rem;
+  }
+
+  .intro-contacto {
+    font-size: 3rem;
   }
 
   /*USUARIO*/

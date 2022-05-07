@@ -17,14 +17,13 @@
   .img-cel {
     width: 200px;
   }
-  /*DESCARGAS*/
-  .app {
-    padding-top: 2rem;
-  }
 
-  .fondo-descargas {
-    height: auto;
+  .extras__cartas {
+    &--title {
+      font-size: 1.2rem;
+    }
   }
+  /*DESCARGAS*/
 
   /*FAQ*/
   .display-3 {
@@ -34,6 +33,10 @@
   /*CONTACTO*/
   .contactanos {
     padding-top: 4rem;
+  }
+
+  .intro-contacto {
+    font-size: 3rem;
   }
 
   /*USUARIO*/
