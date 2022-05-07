@@ -280,6 +280,27 @@ main {
   border-bottom: 1px solid #ffc107;
 }
 
+.newsletter {
+  background-image: url(/img/noticias.jpg);
+  height: 300px;
+  width: auto;
+  margin-top: 5rem;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+.newsletter--title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.newsletter--description {
+  color: rgba(211, 209, 209, 0.7294117647);
+}
+
+#newsletterinput {
+  background-color: rgba(15, 21, 33, 0.5254901961);
+  width: 500px;
+}
+
 .fondo-descargas {
   background-image: url(../img/background-5.jpg);
   height: 100vh;
@@ -699,6 +720,10 @@ label {
   .intro--btn {
     font-size: 0.8rem;
     padding: 0.6rem 1.2rem;
+  }
+
+  #newsletterinput {
+    width: 300px;
   }
 }
 

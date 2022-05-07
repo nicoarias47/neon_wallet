@@ -145,3 +145,26 @@
   border-top: 1px solid $yellow-color;
   border-bottom: 1px solid $yellow-color;
 }
+
+.newsletter {
+  background-image: url(/img/noticias.jpg);
+  height: 300px;
+  width: auto;
+  margin-top: 5rem;
+  border-radius: 0.6rem;
+  text-align: center;
+
+  &--title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &--description {
+    color: $font2-color;
+  }
+}
+
+#newsletterinput {
+  background-color: #0f152186;
+  width: 500px;
+}
