@@ -16,3 +16,19 @@
 .active {
   color: #ffb700;
 }
+/*HOVER REDES*/
+.popover {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: $secondary-color;
+
+  &-body {
+    color: $font-white;
+    padding: 0.3rem;
+  }
+
+  &-arrow {
+    opacity: 0;
+  }
+}

@@ -85,6 +85,21 @@ main {
   color: #ffb700;
 }
 
+/*HOVER REDES*/
+.popover {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: #0f1521;
+}
+.popover-body {
+  color: #f5f5f5;
+  padding: 0.3rem;
+}
+.popover-arrow {
+  opacity: 0;
+}
+
 .footer {
   background-color: #0f1521;
 }
@@ -208,7 +223,6 @@ main {
 .extras {
   padding-top: 2rem;
 }
-
 .extras__cartas {
   background-color: #0f1521;
   margin-bottom: 2rem;
@@ -235,7 +249,7 @@ main {
   filter: drop-shadow(0px 0px 10px rgba(255, 193, 7, 0.6745098039));
 }
 
-.fondo-1 {
+.fondo-1, .fondo-4, .fondo-3, .fondo-2 {
   background-image: url(../img/background-1.jpg);
   height: 100vh;
   width: 100%;
@@ -248,36 +262,17 @@ main {
 
 .fondo-2 {
   background-image: url(../img/background-2.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: 60% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0.5rem;
-  border-top: 1px solid #ffc107;
+  background-position: 62% 50%;
 }
 
 .fondo-3 {
   background-image: url(../img/background-3.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0.5rem;
-  border-top: 1px solid #ffc107;
 }
 
 .fondo-4 {
   background-image: url(../img/background-4.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: 50% 75%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0.5rem;
-  border-top: 1px solid #ffc107;
   border-bottom: 1px solid #ffc107;
+  background-position: 50% 70%;
 }
 
 .newsletter {
@@ -299,20 +294,6 @@ main {
 #newsletterinput {
   background-color: rgba(15, 21, 33, 0.5254901961);
   width: 500px;
-}
-
-.popover {
-  width: auto;
-  height: auto;
-  text-align: center;
-  background-color: #0f1521;
-}
-.popover-body {
-  color: #f5f5f5;
-  padding: 0.3rem;
-}
-.popover-arrow {
-  opacity: 0;
 }
 
 .fondo-descargas {
@@ -366,24 +347,18 @@ main {
   margin: 5rem 0 0 0;
 }
 
-.descargas-title {
+.descargas__title {
   font-size: 2.5rem;
   font-weight: 500;
 }
-.descargas-title p {
+.descargas__title p {
   font-size: 1rem;
   font-weight: 300;
 }
-.descargas-title .descargas-icons {
+.descargas__title--icons {
   width: 2rem;
   display: block;
   filter: drop-shadow(0px 0px 10px rgba(255, 193, 7, 0.6745098039));
-}
-
-.tDescargas {
-  padding-top: 1rem;
-  text-align: center;
-  font-weight: bold;
 }
 
 .box {
@@ -391,16 +366,16 @@ main {
   padding: 2rem 1rem 2rem 1rem;
   border-radius: 0.8rem;
 }
-.box .box-description {
+.box--description {
   padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
 }
-.box .box-description span {
+.box--description span {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.box .box-description li {
+.box--description li {
   padding-bottom: 0.5rem;
 }
 
@@ -414,10 +389,9 @@ main {
 .accordion {
   padding: 0;
 }
-.accordion .accordion-item {
+.accordion-item {
   border: none;
 }
-
 .accordion-button {
   background-color: #0c1019;
   color: #979797;
@@ -446,7 +420,6 @@ main {
 .accordion-button::after {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAApklEQVRIie3VTQrCMBCG4Xc8hj/gddqFeAhByH28inOcFmkXeolxo5AsXHSsEnS+VZLF90ACE4jUHDuzN+VmytWUnadDXLAyAsvHdpSG9dSOhQfOUICVp8ALv52AA/49uBggprTACdjO7PQYSVr0FXwBNjOjzxQTrpI3No5A9wGnQzjkB95PwoqSZnpPJVcdcMD/DPfZ2jVwfLCRgAEYEJKrI/Kt3AGO0iOMsPNZ/wAAAABJRU5ErkJggg==);
 }
-
 .accordion-body {
   background-color: #0c1019;
   color: #f5f5f5;
@@ -454,9 +427,9 @@ main {
   font-size: 1.1rem;
   text-transform: initial;
 }
-.accordion-body .accordion-text {
+.accordion-text {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   padding-top: 1rem;
 }
 
@@ -474,6 +447,7 @@ main {
   font-size: 1.2rem;
   letter-spacing: 1px;
   cursor: pointer;
+  display: inline-block;
 }
 .faq_mas:hover {
   color: #ffb700;
@@ -505,6 +479,12 @@ main {
 .intro-contacto--text {
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+.contact-icons {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
 }
 
 .form-control {
@@ -541,12 +521,6 @@ main {
 }
 .btn-contacto:hover {
   background-color: #f7c851;
-}
-
-.contact-icons {
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
 }
 
 .login {
@@ -664,12 +638,10 @@ label {
 .form-check-input {
   background-color: #f5f5f5;
 }
-
 .form-check-input:checked {
   background-color: #ffb700;
   border-color: #ffb700;
 }
-
 .form-check-input:focus {
   box-shadow: none;
 }

@@ -72,32 +72,32 @@
 
 .extras {
   padding-top: 2rem;
-}
 
-.extras__cartas {
-  background-color: $secondary-color;
-  margin-bottom: 2rem;
-  padding: 1.5rem 1rem;
-  border-radius: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  &__cartas {
+    background-color: $secondary-color;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-  &--title {
-    padding-top: 1rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  &--description {
-    padding-top: 0.5rem;
-    font-weight: 300;
-    font-size: 1.2;
-    color: $font2-color;
-  }
-  &--icons {
-    width: 50px;
-    filter: drop-shadow(0px 0px 10px #ffc107ac);
+    &--title {
+      padding-top: 1rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    &--description {
+      padding-top: 0.5rem;
+      font-weight: 300;
+      font-size: 1.2;
+      color: $font2-color;
+    }
+    &--icons {
+      width: 50px;
+      filter: drop-shadow(0px 0px 10px #ffc107ac);
+    }
   }
 }
 
@@ -113,37 +113,21 @@
 }
 
 .fondo-2 {
+  @extend .fondo-1;
   background-image: url(../img/background-2.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: 60% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0.5rem;
-  border-top: 1px solid $yellow-color;
+  background-position: 62% 50%;
 }
 
 .fondo-3 {
+  @extend .fondo-1;
   background-image: url(../img/background-3.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0.5rem;
-  border-top: 1px solid $yellow-color;
 }
 
 .fondo-4 {
+  @extend .fondo-1;
   background-image: url(../img/background-4.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: 50% 75%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0.5rem;
-  border-top: 1px solid $yellow-color;
   border-bottom: 1px solid $yellow-color;
+  background-position: 50% 70%;
 }
 
 .newsletter {
@@ -167,20 +151,4 @@
 #newsletterinput {
   background-color: #0f152186;
   width: 500px;
-}
-
-.popover {
-  width: auto;
-  height: auto;
-  text-align: center;
-  background-color: $secondary-color;
-
-  &-body {
-    color: $font-white;
-    padding: 0.3rem;
-  }
-
-  &-arrow {
-    opacity: 0;
-  }
 }
