@@ -159,6 +159,7 @@ main {
   width: auto;
   background-repeat: no-repeat;
   background-position: 85% 100%;
+  background-size: 80vh;
 }
 
 .display-1 {
@@ -215,8 +216,7 @@ main {
 }
 
 .img-cel {
-  max-width: 225px;
-  margin-top: 2rem;
+  max-width: 35vh;
   opacity: 0.9;
 }
 
@@ -650,6 +650,25 @@ label {
   padding-bottom: 1.2rem;
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  /*INDEX*/
+  .display-1 {
+    padding-top: 4rem;
+  }
+
+  .intro--btn {
+    display: none;
+  }
+
+  /*CONTACTO*/
+  .contactanos {
+    padding-top: 6rem;
+  }
+
+  .contactanos-form {
+    padding-top: 8rem;
+  }
+}
 @media (max-width: 768px) {
   .main-section {
     height: auto;
@@ -657,7 +676,6 @@ label {
 
   /*INDEX*/
   .display-1 {
-    padding-bottom: 6rem;
     font-size: 3rem;
   }
 

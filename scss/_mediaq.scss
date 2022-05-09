@@ -1,3 +1,22 @@
+@media (max-width: 768px) and (orientation: landscape) {
+  /*INDEX*/
+  .display-1 {
+    padding-top: 4rem;
+  }
+
+  .intro--btn {
+    display: none;
+  }
+  /*CONTACTO*/
+  .contactanos {
+    padding-top: 6rem;
+  }
+
+  .contactanos-form {
+    padding-top: 8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .main-section {
     height: auto;
@@ -5,7 +24,6 @@
 
   /*INDEX*/
   .display-1 {
-    padding-bottom: 6rem;
     font-size: 3rem;
   }
   .img-cel {
