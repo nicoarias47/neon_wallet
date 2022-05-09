@@ -279,6 +279,9 @@ main {
   background-image: url(../img/noticias.jpg);
   height: 300px;
   width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
   margin-top: 5rem;
   border-radius: 0.6rem;
   text-align: center;
