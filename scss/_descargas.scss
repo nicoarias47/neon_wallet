@@ -1,19 +1,27 @@
 .fondo-descargas {
-  background-image: url(../img/back-descargas.jpg);
+  background-image: url(../img/background-5.jpg);
   height: 100vh;
   width: 100%;
-  background-position: center center;
+  background-position: 35% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.app {
-  padding-top: 6rem;
+.display-2 {
+  text-transform: initial;
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: $font-white;
 
-  &--item {
-    background-color: #0f1521ab;
-    padding: 5rem;
-    border-radius: 0.8rem;
+  &--neon {
+    color: $tertiary-color;
+  }
+
+  &-description {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
   }
 }
 
@@ -22,11 +30,11 @@
   background-color: $tertiary-color;
   border-radius: 8px;
   border: none;
-  width: 100%;
   padding: 1rem 1.5rem;
   font-weight: 600;
   text-align: center;
   font-size: 1rem;
+  margin-left: 1rem;
 
   &:focus {
     outline: 0;
@@ -42,10 +50,10 @@
 .descargas-back {
   background-color: $secondary-color;
   padding: 2rem;
-  margin: 10rem 0 8rem 0;
+  margin: 5rem 0 0 0;
 }
 
-.descargas-title {
+.descargas__title {
   font-size: 2.5rem;
   font-weight: 500;
 
@@ -53,27 +61,11 @@
     font-size: 1rem;
     font-weight: 300;
   }
-  .descargas-icons {
+
+  &--icons {
     width: 2rem;
     display: block;
     filter: drop-shadow(0px 0px 10px #ffc107ac);
-  }
-}
-
-/*MAPS*/
-$app: (
-  iphone: #1dc0ed,
-  android: #13b50e,
-);
-
-.tDescargas {
-  padding-top: 1rem;
-  text-align: center;
-  font-weight: bold;
-}
-@each $name, $color in $app {
-  .tDescargas--#{$name} {
-    color: $color;
   }
 }
 
@@ -82,7 +74,7 @@ $app: (
   padding: 2rem 1rem 2rem 1rem;
   border-radius: 0.8rem;
 
-  .box-description {
+  &--description {
     padding: 1rem;
     font-size: 1rem;
     font-weight: 300;

@@ -20,13 +20,19 @@
 }
 
 .intro-contacto {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 500;
 
   &--text {
     font-size: 1.2rem;
     font-weight: 300;
   }
+}
+
+.contact-icons {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
 }
 
 .form-control {
@@ -65,10 +71,4 @@
   &:hover {
     background-color: #f7c851;
   }
-}
-
-.contact-icons {
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
 }

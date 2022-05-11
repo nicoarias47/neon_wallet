@@ -120,15 +120,14 @@ label {
 
 .form-check-input {
   background-color: $font-white;
-}
 
-.form-check-input:checked {
-  background-color: $tertiary-color;
-  border-color: $tertiary-color;
-}
-
-.form-check-input:focus {
-  box-shadow: none;
+  &:checked {
+    background-color: $tertiary-color;
+    border-color: $tertiary-color;
+  }
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .recordarme {

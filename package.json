@@ -1,7 +1,7 @@
 {
-  "name": "bs",
+  "name": "neon_wallet",
   "version": "1.0.0",
-  "description": "Neon\r Coder house - curso HTML",
+  "description": "pagina creada para el proyecto final de desarrollo web en coder house",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/nicoarias47/neon_wallet.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "nicolas arias",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nicoarias47/neon_wallet/issues"
