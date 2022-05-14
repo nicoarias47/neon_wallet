@@ -294,6 +294,25 @@ main {
   color: rgba(211, 209, 209, 0.7294117647);
 }
 
+.btn-index {
+  color: #f5f5f5;
+  background-color: #ffb700;
+  border-radius: 8px;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+}
+.btn-index:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.btn-index:hover {
+  color: #f5f5f5;
+  background-color: #f7c851;
+}
+
 #newsletterinput {
   background-color: rgba(15, 21, 33, 0.5254901961);
   width: 500px;
@@ -725,6 +744,10 @@ label {
 
   #newsletterinput {
     width: 300px;
+  }
+
+  .btn-descargas {
+    margin: 0 auto;
   }
 }
 @media (min-width: 576px) {

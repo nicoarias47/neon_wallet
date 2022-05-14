@@ -151,6 +151,27 @@
   }
 }
 
+.btn-index {
+  color: #f5f5f5;
+  background-color: $tertiary-color;
+  border-radius: 8px;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  &:hover {
+    color: #f5f5f5;
+    background-color: #f7c851;
+  }
+}
+
 #newsletterinput {
   background-color: #0f152186;
   width: 500px;
